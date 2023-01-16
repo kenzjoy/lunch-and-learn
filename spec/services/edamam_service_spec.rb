@@ -40,5 +40,10 @@ RSpec.describe EdamamService do
       :href,
       :title
       )
+
+    expect(r[:recipe][:label]).to be_a(String)
+    expect(r[:recipe][:url]).to be_a(String)
+    expect(r[:recipe][:image]).to be_a(String)
+    expect(r[:recipe][:images]).to be_a(Hash)
   end
 end
