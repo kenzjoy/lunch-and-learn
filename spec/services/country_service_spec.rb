@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe CountryService do
   it 'returns a json response of info about countries' do
-    countries = CountryService.all_countries
+    countries = CountryService.get_all_countries
     country = countries.first
 
     expect(countries).to be_an(Array)
