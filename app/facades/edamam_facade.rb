@@ -1,0 +1,3 @@
+class EdamamFacade
+  
+end

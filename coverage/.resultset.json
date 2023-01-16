@@ -1,6 +1,22 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/country_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          250,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/country_service.rb": {
         "lines": [
           1,
@@ -20,18 +36,18 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null,
-          1,
+          0,
           null,
           null
         ]
@@ -50,6 +66,15 @@
         "lines": [
           0,
           0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/edamam_facade.rb": {
+        "lines": [
+          0,
+          null,
           0
         ],
         "branches": {
@@ -92,6 +117,6 @@
         }
       }
     },
-    "timestamp": 1673900882
+    "timestamp": 1673902961
   }
 }
