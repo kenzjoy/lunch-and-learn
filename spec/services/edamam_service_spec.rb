@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe EdamamService do
-  it 'returns recipes from a given country' do
+  it 'returns a json response of recipes from a given country' do
     country = 'thailand'
     recipes = EdamamService.get_recipe_search(country)
 

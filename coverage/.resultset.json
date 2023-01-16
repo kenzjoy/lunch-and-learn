@@ -1,6 +1,20 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/country_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/edamam_service.rb": {
         "lines": [
           1,
@@ -78,6 +92,6 @@
         }
       }
     },
-    "timestamp": 1673898658
+    "timestamp": 1673900708
   }
 }
