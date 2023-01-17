@@ -24,4 +24,10 @@ RSpec.describe ImageService, :vcr do
     expect(photo[:urls][:regular]).to be_a(String)
   end
 
+  it 'returns an empty array if search params do not return an image' do
+    country = 'phish'
+    photos = ImageService.get_photos(country)
+
+    expect(photos[:results]).to eq([])
+  end
 end
