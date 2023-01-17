@@ -6,12 +6,20 @@ RSpec.describe CountryFacade, :vcr do
       details = CountryFacade.country_details
 
       expect(details).to be_an(Array)
+      expect(details.first.keys).to include(
+        :common,
+        :official,
+        :nativeName
+        )
     end
   end
 
   describe '#random_country' do
     it 'returns a random country by name' do
+      random = CountryFacade.random_country
 
+      expect(random).to be_a(Hash)
+      expect(random[:common]).to be_a(String)
     end
   end
 end

@@ -7,6 +7,7 @@ class CountryFacade
   end
 
   def self.random_country
-
+    random = country_details.shuffle
+    random.first
   end
 end
