@@ -17,4 +17,11 @@ RSpec.describe VideoService, :vcr do
     expect(video[:snippet]).to have_key(:title)
     expect(video[:snippet][:title]).to be_a(String)
   end
+
+  it 'returns an empty array if search params do not return a video' do
+    country = 'phish'
+    videos = VideoService.get_video(country)
+
+    expect(videos[:items]).to eq([])
+  end
 end
