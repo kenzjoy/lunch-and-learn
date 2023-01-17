@@ -11,6 +11,24 @@ RSpec.describe 'recipes index', :vcr do
     parsed = JSON.parse(response.body, symbolize_names: true)
     recipes = parsed[:data]
 
-    require 'pry'; binding.pry
+    expect(recipes).to be_an(Array)
+    expect(recipes.count).to eq(20)
+    expect(recipes.first.keys).to include(
+      :id,
+      :type,
+      :attributes
+      )
+    expect(recipes.first[:id]).to eq(nil)
+    expect(recipes.first[:type]).to eq('recipe')
+    expect(recipes.first[:attributes].keys).to include(
+      :title,
+      :url,
+      :country,
+      :image
+      )
+    expect(recipes.first[:attributes][:title]).to be_a(String)
+    expect(recipes.first[:attributes][:url]).to be_a(String)
+    expect(recipes.first[:attributes][:country]).to be_a(String)
+    expect(recipes.first[:attributes][:image]).to be_a(String)
   end
 end
