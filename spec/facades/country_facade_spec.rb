@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe CountryFacade do
+RSpec.describe CountryFacade, :vcr do
   describe '#country_details' do
     it 'returns a list of countries by name' do
       details = CountryFacade.country_details
-require 'pry'; binding.pry
+
       expect(details).to be_an(Array)
     end
   end
