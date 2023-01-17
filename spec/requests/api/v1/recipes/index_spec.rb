@@ -55,7 +55,7 @@ RSpec.describe 'recipes index', :vcr do
 
   it 'returns a json formatted list of recipes from a random country if country params are blank' do
     random_country_json = File.read('spec/fixtures/random_country.json')
-    stub_request(:get, 'https://https://restcountries.com/v3.1/all').to_return(status: 200, body: random_country_json)
+    stub_request(:get, 'https://restcountries.com/v3.1/all').to_return(status: 200, body: random_country_json)
 
     get '/api/v1/recipes'
 
