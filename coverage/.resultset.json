@@ -18,16 +18,26 @@
           null
         ]
       },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/edamam_facade.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/services/country_service.rb": {
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
           null,
           1,
-          2,
-          2,
+          3,
+          3,
           null,
           null
         ]
@@ -37,18 +47,18 @@
           1,
           null,
           1,
-          0,
-          0,
-          0,
+          2,
+          2,
+          2,
           null,
           null,
           null,
           1,
-          0,
-          0,
+          2,
+          2,
           null,
           null,
-          0,
+          2,
           null,
           null
         ]
@@ -67,15 +77,6 @@
         "lines": [
           0,
           0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/edamam_facade.rb": {
-        "lines": [
-          0,
-          null,
           0
         ],
         "branches": {
@@ -118,6 +119,6 @@
         }
       }
     },
-    "timestamp": 1673915754
+    "timestamp": 1673916977
   }
 }

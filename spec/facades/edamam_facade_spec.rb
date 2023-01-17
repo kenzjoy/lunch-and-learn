@@ -7,6 +7,7 @@ RSpec.describe EdamamFacade, :vcr do
       recipes = EdamamFacade.recipe_search(country)
 
       expect(recipes).to be_an(Array)
+      expect(recipes.count).to eq(20)
     end
   end
 end
