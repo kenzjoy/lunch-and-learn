@@ -24,8 +24,25 @@
           1,
           1,
           1,
+          20,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/poros/recipe.rb": {
+        "lines": [
+          1,
           1,
           null,
+          null,
+          null,
+          null,
+          1,
+          22,
+          22,
+          22,
+          22,
           null,
           null
         ]
@@ -121,6 +138,6 @@
         }
       }
     },
-    "timestamp": 1673917295
+    "timestamp": 1673919389
   }
 }
