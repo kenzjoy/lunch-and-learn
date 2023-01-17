@@ -1,6 +1,7 @@
 class CountryFacade
   def self.country_details
     details = CountryService.all_countries
+    require 'pry'; binding.pry
     details.map do |country|
       country[:name]
     end
