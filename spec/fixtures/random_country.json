@@ -1,5 +1,7 @@
 [
   {
-      "name": "Japan"
+      "name": {
+        "common": "Japan"
+      }
   }
 ]

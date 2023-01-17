@@ -3,11 +3,11 @@ class CountryFacade
     details = CountryService.all_countries
     details.map do |country|
       Country.new(country)
+      # country[:name][:common]
     end
   end
 
   def self.random_country
-    random = country_details.shuffle
-    random.first
+    country_details.sample.name
   end
 end
