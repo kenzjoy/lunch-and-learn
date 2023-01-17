@@ -1,14 +1,11 @@
 class Api::V1::RecipesController < ApplicationController
-
   def index
-    recipes = EdamamFacade.recipe_search(params[:country])
-
+    if params[:country]
+      recipes = EdamamFacade.recipe_search(params[:country])
+    else
+      country = CountryFacade.random_country
+      recipes = EdamamFacade.recipe_search(country)
+    end
     render json: RecipeSerializer.new(recipes)
   end
-
-  # private
-
-  # def country_params
-  #   params.permit(:country)
-  # end
 end

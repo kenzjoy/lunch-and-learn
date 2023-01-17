@@ -8,6 +8,6 @@ class CountryFacade
 
   def self.random_country
     random = country_details.shuffle
-    random.first
+    random.first[:common]
   end
 end
