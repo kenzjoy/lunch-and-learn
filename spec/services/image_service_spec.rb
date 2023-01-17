@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe ImageService, :vcr do
   it 'returns a json response with images related to the country given in the search query' do
-    country = 'sweden'
+    # country = 'sweden'
+    country = 'new zealand'
     photos = ImageService.get_photos(country)
 
     expect(photos).to be_a(Hash)
