@@ -8,6 +8,10 @@ RSpec.describe EdamamFacade, :vcr do
 
       expect(recipes).to be_an(Array)
       expect(recipes.count).to eq(20)
+
+      recipe = recipes.first
+      
+      expect(recipe).to be_a(Recipe)
     end
   end
 end
