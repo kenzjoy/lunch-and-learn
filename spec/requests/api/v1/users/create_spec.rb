@@ -42,6 +42,7 @@ RSpec.describe 'users create' do
       expect(response.status).to eq(400)
       
       parsed = JSON.parse(response.body, symbolize_names: true)
+      expect(parsed[:error]).to eq('Please try again.')
     end
   end
 end
