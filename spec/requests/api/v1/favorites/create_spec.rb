@@ -32,4 +32,27 @@ RSpec.describe 'favorites create' do
       expect(parsed[:success]).to eq('Favorite added successfully.')
     end
   end
+
+  describe 'when user api key is not valid' do
+    it 'returns an error message' do
+      headers = { "Content-Type": "application/json", Accept: "application/json" }
+      body = ( {
+        "api_key": "yoyoyoyoyoyooooo",
+        "country": "Azerbaijan",
+        "recipe_link": "https://food52.com/recipes/74424-lavash-chicken-herb-pie-with-barberries",
+        "recipe_title": "Lavash, Chicken & Herb Pie with Barberries"
+      } )
+
+      post '/api/v1/favorites', headers: headers, params: JSON.generate(body)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed).to be_a(Hash)
+      expect(parsed).to have_key(:error)
+      expect(parsed[:error]).to eq('API key does not belong to a user.')
+    end
+  end
 end
