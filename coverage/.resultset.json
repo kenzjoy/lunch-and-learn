@@ -42,26 +42,6 @@
           null
         ]
       },
-      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/learning_resources_facade.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/video_facade.rb": {
         "lines": [
           1,
@@ -71,6 +51,32 @@
           2,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          11,
+          null,
+          null
+        ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -286,18 +292,37 @@
           null
         ]
       },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/mailers/application_mailer.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/application_record.rb": {
-        "lines": [
           0,
           0,
           0
@@ -334,6 +359,6 @@
         }
       }
     },
-    "timestamp": 1674001502
+    "timestamp": 1674022595
   }
 }
