@@ -42,26 +42,6 @@
           null
         ]
       },
-      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/learning_resources_facade.rb": {
-        "lines": [
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/facades/video_facade.rb": {
         "lines": [
           1,
@@ -162,12 +142,12 @@
         "lines": [
           1,
           1,
-          4,
+          3,
           null,
           null,
           1,
-          4,
-          4,
+          3,
+          3,
           null,
           null
         ]
@@ -177,18 +157,18 @@
           1,
           null,
           1,
-          5,
-          5,
-          5,
+          4,
+          4,
+          4,
           null,
           null,
           null,
           1,
-          5,
-          5,
+          4,
+          4,
           null,
           null,
-          5,
+          4,
           null,
           null
         ]
@@ -197,17 +177,17 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          3,
+          3,
           null,
           null,
           null,
           1,
-          5,
-          5,
+          3,
+          3,
           null,
           null,
-          5,
+          3,
           null,
           null
         ]
@@ -216,21 +196,21 @@
         "lines": [
           1,
           1,
-          5,
-          5,
+          3,
+          3,
           null,
           null,
           null,
           1,
-          5,
-          5,
-          5,
-          5,
-          5,
-          5,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
-          5,
+          3,
           null,
           null
         ]
@@ -312,7 +292,25 @@
           null
         ]
       },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/serializers/user_serializer.rb": {
         "lines": [
           0,
           0,
@@ -351,6 +349,6 @@
         }
       }
     },
-    "timestamp": 1674011503
+    "timestamp": 1674012566
   }
 }
