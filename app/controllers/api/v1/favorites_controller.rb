@@ -1,18 +1,16 @@
 class Api::V1::FavoritesController < ApplicationController
   def create
     user = User.find_by(api_key: params[:api_key])
-    if user.nil?
-      render json: { error: 'API key does not belong to a user.' }, status: 404
-    elsif 
-      favorite = Favorite.new(favorite_params)
-      favorite.user_id = user.id
+    if user.present?
+      favorite = user.favorites.new(favorite_params)
       favorite.save
-      render json: { message: 'Recipe has been added to favorites.' }, status: 201
+      render json: { 'success': 'Favorite added successfully.' }, status: 201
+    else
+      render json: { error: 'API key does not belong to a user.' }, status: 400
     end
-    # require 'pry'; binding.pry
   end
 
   def favorite_params
-    params.permit(:country, :recipe_link, :recipe_title)
+    params.permit(:country, :recipe_link, :recipe_title, :api_key)
   end
 end
