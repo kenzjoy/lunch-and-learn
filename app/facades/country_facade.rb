@@ -2,12 +2,12 @@ class CountryFacade
   def self.country_details
     details = CountryService.all_countries
     details.map do |country|
-      country[:name]
+      Country.new(country)
+      # country[:name][:common]
     end
   end
 
   def self.random_country
-    random = country_details.shuffle
-    random.first[:common]
+    country_details.sample.name
   end
 end

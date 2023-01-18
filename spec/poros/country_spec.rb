@@ -1,8 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Country, :vcr do
-  before(:each) do 
-    @country = Country.new( { name: 'peru' } )
+  before(:each) do
+    info = { name: {common: 'peru'} }
+    @country = Country.new(info)
   end
 
   it 'exists' do
