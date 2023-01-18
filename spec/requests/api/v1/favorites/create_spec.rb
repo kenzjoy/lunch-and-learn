@@ -18,7 +18,11 @@ RSpec.describe 'favorites create' do
       post '/api/v1/favorites', headers: headers, params: JSON.generate(favorite_params)
       
       expect(response).to be_successful
+      expect(response.status).to eq(201)
+
       parsed = JSON.parse(response.body, symbolize_names: true)
+
+      expect(parsed[:message]).to eq("Recipe has been added to favorites.")
     end
   end
 end
