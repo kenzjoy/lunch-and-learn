@@ -77,7 +77,15 @@
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/user.rb": {
         "lines": [
           1,
-          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
           null
         ]
       },
@@ -303,15 +311,6 @@
         "branches": {
         }
       },
-      "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/mackenzieleng/Desktop/turing_work/3mod/projects/lunch-and-learn/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -341,6 +340,6 @@
         }
       }
     },
-    "timestamp": 1674008802
+    "timestamp": 1674008924
   }
 }
