@@ -6,11 +6,7 @@ Rails.application.routes.draw do
       resources :recipes, only: [:index]
       resources :learning_resources, only: [:index]
       resources :users, only: [:create]
-
-      # post '/favorites', to: 'favorites#update'
-      # get '/learning_resources', to: 'learning_resources#show'
-      # post '/users', to: 'users#update'
-
+      resources :favorites, only: [:create]
     end
   end
 end

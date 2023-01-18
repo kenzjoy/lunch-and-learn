@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'users create' do
   describe 'when required params are given' do
     it 'creates a new user and generates an api key for said user' do
-      headers = { "CONTENT_TYPE" => "application/json" }
+      headers = { "Content-Type": "application/json", Accept: "application/json" }
       body = JSON.generate(
         'name': 'uncle ebenezer',
         'email': 'tweezer@badboyfreecat.com'
@@ -22,7 +22,7 @@ RSpec.describe 'users create' do
       expect(parsed[:data]).to have_key(:attributes)
       expect(parsed[:data][:type]).to eq('user')
       expect(parsed[:data][:attributes].keys).to include(
-        :name, 
+        :name,
         :email,
         :api_key
       )
