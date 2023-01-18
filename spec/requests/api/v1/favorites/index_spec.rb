@@ -53,4 +53,24 @@ RSpec.describe 'favorites index' do
     expect(parsed[:data]).to be_an(Array)
     expect(parsed[:data]).to eq([])
   end
+
+  it 'returns an error if there are not any user params given' do
+
+  end
+
+  it 'returns an error if the user api key is not valid' do
+    headers = { "Content-Type": "application/json", Accept: "application/json" }
+    user_params = { "api_key": "yoyoyoyoyoyooooo" }
+
+    get '/api/v1/favorites', headers: headers, params: user_params
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+
+    parsed = JSON.parse(response.body, symbolize_names: true)
+
+    expect(parsed).to be_a(Hash)
+    expect(parsed).to have_key(:error)
+    expect(parsed[:error]).to eq('No user found, please try again.')
+  end
 end
