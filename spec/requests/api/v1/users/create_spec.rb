@@ -22,7 +22,7 @@ RSpec.describe 'users create' do
       expect(parsed[:data]).to have_key(:attributes)
       expect(parsed[:data][:type]).to eq('user')
       expect(parsed[:data][:attributes].keys).to include(
-        :name, 
+        :name,
         :email,
         :api_key
       )

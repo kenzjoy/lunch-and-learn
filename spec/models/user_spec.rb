@@ -8,6 +8,10 @@ RSpec.describe User, type: :model do
     it { should validate_uniqueness_of :email }
   end
 
+  describe 'relationships' do
+    it { should have_many(:favorites) }
+  end
+
   describe 'assign_api_key' do
     it 'assigns each new user a unique api key when they register' do
       bird = User.create(
