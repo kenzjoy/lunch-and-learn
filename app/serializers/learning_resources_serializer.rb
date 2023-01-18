@@ -23,6 +23,7 @@ class LearningResourcesSerializer
         }
       }
     else
+
     end
   end
 end
