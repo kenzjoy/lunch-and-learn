@@ -54,8 +54,13 @@ RSpec.describe 'favorites index' do
     expect(parsed[:data]).to eq([])
   end
 
-  it 'returns an error if there are not any user params given' do
+  it 'returns no content if there are not any user params given' do
+    headers = { "Content-Type": "application/json", Accept: "application/json" }
+    get '/api/v1/favorites', headers: headers
 
+    expect(response).to be_successful
+    expect(response.status).to eq(204)
+    expect(response.message).to eq('No Content')
   end
 
   it 'returns an error if the user api key is not valid' do

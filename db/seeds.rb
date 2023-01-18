@@ -17,3 +17,7 @@ reba = User.create!(
   email: 'rebarose@bestgirlever.com',
   api_key: 'atg721ef27poq5hwbl88k3572f1'
   )
+
+reba_fave_1 = reba.favorites.create!(country: "Afghanistan", recipe_link: "https://food52.com/recipes/20423-south-indie-cilantro-chutney", recipe_title: "South 'Indie' Cilantro Chutney" )
+reba_fave_2 = reba.favorites.create!(country: "Lesotho", recipe_link: "http://www.internationalcuisine.com/lesotho-spinach-tangerine-soup/", recipe_title: "Lesotho Spinach and Tangerine Soup (Butha-")
+athena_fave_1 = athena.favorites.create!(country: "British Indian Ocean Territory", recipe_link: "http://www.food.com/recipe/serrage-poulet-british-indian-ocean-territory-479532", recipe_title: "Serrage Poulet (British Indian Ocean Territory)")
