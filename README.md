@@ -52,4 +52,16 @@ rails db:{create,migrate}
 >
 > **EXAMPLE RESPONSE:**
 > <img width="850" alt="Screenshot 2023-01-18 at 5 06 58 PM" src="https://user-images.githubusercontent.com/108506841/213324879-2e185d6c-dcb7-4bd8-b0ea-71e754c684d1.png">
-
+> 
+> 3. `POST /api/v1/users` - in order to properly interact with this endpoint, you must send a JSON payload in the body of the request. In Postman, under the address bar, click on **"body"**, select **"raw"**, and you will see a dropdown that says **"text"** in it (choose **"JSON"** from the dropdown).
+>
+> **EXAMPLE JSON PAYLOAD:**
+> <img width="550" alt="Screenshot 2023-01-18 at 5 16 19 PM" src="https://user-images.githubusercontent.com/108506841/213325892-337f0669-f09e-4354-958e-f949d995d4e7.png">
+> 
+> **EXAMPLE RESPONSE:**
+> <img width="450" alt="Screenshot 2023-01-18 at 5 17 11 PM" src="https://user-images.githubusercontent.com/108506841/213325990-22a853cb-4135-4b1a-b2e2-875bd1a6ec09.png">
+> 
+> 4. `POST /api/v1/favorites` - Same as above, you must send a JSON payload in the body of the request. Use the auto-generate API key from the last endpoint as the payload for this endpoint. You can also use endpoint 1 to get real data to enter into the rest of the required payload fields.
+>
+> **EXAMPLE JSON PAYLOAD:**
+> <img width="650" alt="Screenshot 2023-01-18 at 5 22 15 PM" src="https://user-images.githubusercontent.com/108506841/213326543-5bbd522b-a317-47cc-ba32-b51032eca3d5.png">
