@@ -20,7 +20,7 @@ The goal is a back-end developer will learn how to contribute towards a project 
 
 ## Required API Keys
 > - [edamam](https://api.edamam.com/)
-> - [youtube](https://developers.google.com/youtube/v3)
+> - [youtube](https://developers.google.com/youtube/v3) 
 > - [unsplash](https://unsplash.com/developers)
 > - [rest countries](https://restcountries.com/) *no signup required*
 
@@ -28,10 +28,28 @@ The goal is a back-end developer will learn how to contribute towards a project 
 ```
 git clone git@github.com:kenzjoy/lunch-and-learn.git
 cd lunch-and-learn
+bundle exec figaro install
+add required API keys to application.yml folder
 bundle install
 rails db:{create,migrate}
-rails s
 ```
+## Testing
+> Once you have the local setup complete, you can run the following code to check the test suite:
+> `bundle exec rspec spec`
+
+# experince the data come to life >>>
+> - Start by running `rails s` in your terminal
+> - Using an API platform such as [Postman](https://www.postman.com/), enter each of the following endpoints and follow any associated instructions to interact with the exposed endpoints
 
 ## API Endpoints 
-> Base URL: [http://localhost:3000/api/v1](http://localhost:3000/api/v1)
+> Base URL: [http://localhost:3000](http://localhost:3000)
+> 1. `GET /api/v1/recipes?country=canada` - play around with using other country names to expose more data. You can also omit the country search to generate a random country by instead using `GET /api/v1/recipes`
+>
+> **EXAMPLE RESPONSE:**
+> <img width="900" alt="Screenshot 2023-01-18 at 5 02 47 PM" src="https://user-images.githubusercontent.com/108506841/213324370-20a1301c-9919-4bb4-8975-3c28c471c833.png">
+> 
+> 2. `GET /api/v1/learning_resources?country=brazil` - this endpoint will return one educational video and ten images that match that country's search
+>
+> **EXAMPLE RESPONSE:**
+> <img width="850" alt="Screenshot 2023-01-18 at 5 06 58 PM" src="https://user-images.githubusercontent.com/108506841/213324879-2e185d6c-dcb7-4bd8-b0ea-71e754c684d1.png">
+
