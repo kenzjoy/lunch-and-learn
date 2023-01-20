@@ -42,7 +42,10 @@ RSpec.describe 'users create' do
       expect(response.status).to eq(400)
       
       parsed = JSON.parse(response.body, symbolize_names: true)
-      expect(parsed[:error]).to eq('Please try again.')
+      expect(parsed).to be_a(Hash)
+      expect(parsed).to have_key(:email)
+      expect(parsed[:email]).to eq(["can't be blank"])
+      # expect(parsed[:error]).to eq('Please try again.')
     end
   end
 end
